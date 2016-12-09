@@ -30,7 +30,7 @@
         <div class='form-group'>
            <label>Phone</label>
            <input
-               type='phone'
+               type='text'
                id='phone'
                name='phone'
                value='{{ old('phone') }}'
@@ -41,7 +41,7 @@
         <div class='form-group'>
            <label>Email</label>
            <input
-               type='email'
+               type='text'
                id='email'
                name='email'
                value='{{ old('email') }}'

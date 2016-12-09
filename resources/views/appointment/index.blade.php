@@ -21,7 +21,9 @@
             <th>Appointment Date</th>
             <th>Appointment Time</th>
             <th>Appointment Status</th>
+            @if(Auth::user()->admin)
             <th>Edit Status</th>
+            @endif
         </tr>
     </thead>
     <?php $i = 0; ?>
@@ -32,7 +34,9 @@
             <td>{{$appointment->visit_date}}</td>
             <td>{{$appointment->visit_time}}</td>
             <td>{{$appointment->visited}}</td>
+            @if(Auth::user()->admin)
             <td><button class="btn btn-primary"> <a class='button' href='/appointments/{{ $appointment->id }}/edit'>Edit</a></button></td>
+            @endif
         </tr>
     @endforeach
     </table>

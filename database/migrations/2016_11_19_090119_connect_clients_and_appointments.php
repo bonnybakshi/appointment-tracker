@@ -20,7 +20,7 @@ class ConnectClientsAndAppointments extends Migration
             # This field `client_id` is a foreign key that connects to the `id` field in the `client` table with on delete cascade
             $table->foreign('client_id')
                   ->references('id')->on('clients')
-                  ->onDelete('cascade');
+                 ->onDelete('cascade');
 
         });
     }

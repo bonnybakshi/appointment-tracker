@@ -7,19 +7,36 @@ use App\Appointment;
 use App\Client;
 use Session;
 use App\Http\Controllers\DB;
+use Illuminate\Support\Facades\Auth;
 class AppointmentController extends Controller
 {
     /**
-     * GET
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    * GET
+    */
+    public function index(Request $request)
     {
-        $appointments = Appointment::all();
+
+        $user = $request->user();
+        
+        // if user is not admin
+        if(!($user->isAdmin())) {
+            # Approach 1)
+            $appointments = Appointment::where('user_id', '=', $user->id)->orderBy('id','DESC')->get();
+
+            # Approach 2) Take advantage of Model relationships
+            #$apointments = $user->apointments()->get();
+        }
+        //if user is admin
+        else if($user->isAdmin()){
+            $appointments = Appointment::all();
+        }
+        else  {
+            $appointments = [];
+        }
+
         return view('appointment.index')->with([
-            'appointments' => $appointments,
-            ]);
+            'appointments' => $appointments
+        ]);
     }
 
     /**

@@ -1,34 +1,11 @@
-
-body {
-  font-family: verdana, tahoma, helvetica, arial, sans-serif;
-}
-
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
 /********* navbar *******/
-.navbar {
-  margin-bottom: 0px;
-  font-family: 'raleway', sans-serif;
-}
-
-
-
-.navbar-inverse {
-  background-color:  white;
-  border-color: white;
-}
-
-.navbar-inverse .navbar-nav > li > a {
-  color: #222222;
-}
-
-.navbar-inverse .navbar-nav > li > a:hover {
-  color: #F7484E;
-}
-
 .navbar-brand {
   font-weight: 300;
   font-size: 25px;
   letter-spacing: 2px;
+  color:#FFD401;
   
 }
 @media (max-width: 360px) {
@@ -36,7 +13,6 @@ body {
         font-weight: 300;
         font-size: 27px;
         letter-spacing: 2px;
-    
     }
     p, h4{
         line-height: 20px;
@@ -50,25 +26,14 @@ body {
     }
 }
 
-.navbar-inverse .navbar-brand {
-  color: #F7484E;
-}
-
-.navbar-inverse .navbar-toggle {
-  border-color: transparent;
-}
-
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus {
-  color: #F7484E;
-  background-color: transparent;
-}
 button a{
   color: white;
 }
 button a:hover{
   color:white;
+}
+footer{
+  padding: 4em;
 }
 /*----------------------------------------------------
 Forms
