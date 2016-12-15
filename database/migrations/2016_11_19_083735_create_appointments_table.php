@@ -23,8 +23,8 @@ class CreateAppointmentsTable extends Migration
             # The rest of the fields...
             $table->date('visit_date');
             #$table->string('author')->nullable();
-            $table->string('visit_time', 5);
-            $table->string('visited');
+            $table->string('visit_time');
+            $table->string('visited')->default('pending');
         });
     }
 

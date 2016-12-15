@@ -35,6 +35,35 @@ button a:hover{
 footer{
   padding: 4em;
 }
+.navbar-inverse .navbar-brand {
+    color: #ffffff;
+}
+table{
+    margin-top: 2em;
+}
+tfoot select {
+  width: 100%;
+}
+input.input-sm{
+    margin-left: 10px;
+}
+#example_filter{
+    text-align: right;
+}
+#example_paginate{
+    text-align: right;
+}
+select{
+    width: 100%;
+}
+th.sort{ 
+    background-image: url(../images/bg.gif); 
+    cursor: pointer; 
+    padding-left: 1em;
+    background-repeat: no-repeat; 
+    background-position: center right;  
+}
+
 /*----------------------------------------------------
 Forms
 -----------------------------------------------------*/

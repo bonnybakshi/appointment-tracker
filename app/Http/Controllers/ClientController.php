@@ -133,7 +133,7 @@ class ClientController extends Controller
             return redirect('/clients');
         }
 
-        # Then delete the book
+        # Then delete 
         $client->delete();
 
         # Finish

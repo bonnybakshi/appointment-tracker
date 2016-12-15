@@ -14,7 +14,7 @@ class ClientsTableSeeder extends Seeder
     	DB::table('clients')->insert([
 		    'created_at' => Carbon\Carbon::now()->toDateTimeString(),
 		    'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
-		    'name' => 'Jessica Smith',
+		    'name' => 'Jessica',
 		    'phone' => '714-222-3333',
 		    'email' => 'jessica@gmail.com',
 	    ]);
@@ -22,7 +22,7 @@ class ClientsTableSeeder extends Seeder
 	     DB::table('clients')->insert([
 		    'created_at' => Carbon\Carbon::now()->toDateTimeString(),
 		    'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
-		    'name' => 'Abbie Vincent',
+		    'name' => 'Abbie',
 		    'phone' => '543-333-2222',
 		    'email' => 'abbie@gmail.com',
 	    ]);
@@ -30,7 +30,7 @@ class ClientsTableSeeder extends Seeder
 	    DB::table('clients')->insert([
 		    'created_at' => Carbon\Carbon::now()->toDateTimeString(),
 		    'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
-		    'name' => 'Dana Jones',
+		    'name' => 'Dana',
 		    'phone' => '777-444-5555',
 		    'email' => 'dana@gmail.com',
 	    ]);

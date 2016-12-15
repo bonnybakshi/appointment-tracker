@@ -6,7 +6,7 @@ use App\User;
 use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
-
+use App\Client;
 class RegisterController extends Controller
 {
     /*
@@ -47,8 +47,16 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
+        Validator::extend('phone', function($attribute, $value, $parameters, $validator) {
+            return preg_match('/^\D?(\d{3})\D?(\d{3})\D?(\d{4})$/', $value) && strlen($value) >= 10;
+        });
+
+        Validator::replacer('phone', function($message, $attribute, $rule, $parameters) {
+            return str_replace(':attribute',$attribute, 'Invalid phone number.');
+        });
         return Validator::make($data, [
             'name' => 'required|max:255',
+            'phone' => 'required|phone',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|confirmed',
         ]);
@@ -62,6 +70,12 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $client = new Client();
+        $client->name = $data['name'];
+        $client->phone = $data['phone'];
+        $client->email = $data['email'];
+        $client->save();
+
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],

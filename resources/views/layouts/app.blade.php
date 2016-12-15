@@ -13,7 +13,7 @@
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
     <link href='/css/style.css' type='text/css' rel='stylesheet'>
-
+    <script type="text/javascript" src="/js/myjs.js"></script> 
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
@@ -55,6 +55,7 @@
                             <li><a href="{{ url('/register') }}">Register</a></li>
                         @else
                             <li class="dropdown">
+                                <img src="/images/user.png" alt="">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
@@ -78,9 +79,13 @@
                 </div>
             </div>
         </nav>
-
         @yield('content')
     </div>
+     <footer>
+        <div class="container">
+            &copy; {{ date('Y') }} Rajrupa Bakshi. All Rights Reserved. 
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>

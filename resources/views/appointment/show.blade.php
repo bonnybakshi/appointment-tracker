@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    View Clients
+    View {{$client->name}}'s Appointments
 @endsection
 
 @section('content')
@@ -12,15 +12,24 @@
             <div id='client'>
                 <section class='client'>
                 <h4>Appointments for {{$client->name}}</h4>
-                    <table class="table table-striped table-bordered">
+                <div class="table-responsive">
+                    <table id="example" class="display table table-striped table-bordered" cellspacing="0" >
                     <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Visit date</th>
-                        <th>Visit Time</th>
-                        <th>Status</th>
-                    </tr>
+                        <tr class="info">
+                            <th class="sort">#</th>
+                            <th class="sort">Visit date</th>
+                            <th class="sort">Visit Time</th>
+                            <th class="sort">Status</th>
+                        </tr>
                     </thead>
+                    <tfoot>
+                        <tr class="info">
+                            <th>#</th>
+                            <th>Visit date</th>
+                            <th>Visit Time</th>
+                            <th>Status</th>
+                        </tr>
+                    </tfoot>
                     <?php $i = 0; ?>
                     @foreach($appointment as $appointment)
                     <tr>
@@ -31,6 +40,7 @@
                     </tr>
                     @endforeach
                    </table>
+                </div>
                 </section>
                 
             </div>

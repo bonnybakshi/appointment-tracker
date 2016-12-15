@@ -2,7 +2,7 @@
 
 
 @section('title')
-    manage appointments
+    Edit appointment status
 @endsection
 
 @section('content')
@@ -13,15 +13,16 @@
     <form method='POST' action='/appointments/{{ $appointments->id }}'>
 
     {{ method_field('PUT') }}
-    {{ csrf_field() }} 
-        <table class="table table-striped table-bordered">
+    {{ csrf_field() }}
+        <div class="table-responsive"> 
+        <table id="example" class="display table table-striped table-bordered" cellspacing="0">
         <thead>
-            <tr>
-                <th>#</th>
-                <th>Client Name</th>
-                <th>Appointment Date</th>
-                <th>Appointment Time</th>
-                <th>Appointment Status</th>
+            <tr class="info">
+                <th class="sort">#</th>
+                <th class="sort">Client Name</th>
+                <th class="sort">Appointment Date</th>
+                <th class="sort">Appointment Time</th>
+                <th class="sort">Appointment Status</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -43,6 +44,7 @@
                 <td><button type="submit" class="btn btn-primary">Save changes</button></td>
             </tr>
         </table>
+        </div>
     </form>
     </div>
     </div>

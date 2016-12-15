@@ -1,27 +1,74 @@
-# Laravel PHP Framework
+# Appointment Tracker
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+##URL: http://appointmenttracker.rbakshi.me
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+##Demo:  
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+## Tables
+Tables:
+* Appointments
+* Client
 
-## Official Documentation
+## Admin Login
+* E-mail Address: admin@harvard.edu
+* Password: helloworld
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+## CRUD 
+### Admin Login
+*Create:  Create an appointment, Add a new client
 
-## Contributing
+*Read:  Appointments, Clients
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+*Update:  Update appointment status 
 
-## Security Vulnerabilities
+*Delete: Delete client (with on delete cascade)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+### User login
+*Create:  Create an appointment
 
-## License
+*Read:  Appointments
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+*Delete: Delete appointment
+
+## Authentication
+* Login
+* Registration
+* Logout
+
+## Features
+### General Features
+* Login
+* Register
+* User and Admin logIn
+* Table Individual column searching
+* Full table search
+* Table sorting 
+
+### Admin Login Features
+* View all appointments
+* Edit appointment status
+* Create a new appointment
+* View all clients
+* View selected client's appointments
+* Email a client
+* Delete a client
+
+### User Login Features
+* View all appointments
+* Create a new appointment
+* Delete appointment
+
+### Create Appointment Features
+* Pick an appointment date 
+* Show available time slots based on the selected appointment date
+
+## Planning Doc: 
+<https:>
+
+## Credits
+* Lecture examples - For reference
+* [Bootstrap-datepicker](https://bootstrap-datepicker.readthedocs.io/en/latest/)
+* [DataTables Table plug-in for jQuery](https://datatables.net/)
+* [Google Fonts](https://fonts.google.com/)
+* [Bootstrap](http://getbootstrap.com/)
+

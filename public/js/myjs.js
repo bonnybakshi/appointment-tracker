@@ -14,5 +14,4 @@ function validate(){
 			evt.target.value = value.replace(pattern, "$1-$2-$3");
 		} 
 	});
-
 }
