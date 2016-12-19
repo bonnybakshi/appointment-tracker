@@ -59,6 +59,7 @@
         </select>
     </div>
 @endif
+    <br>
     <button type="submit" class="btn btn-primary" @if(empty($time_for_dropdown)) disabled @endif ?> Create Appointment</button>      
 
     <div class='error'>

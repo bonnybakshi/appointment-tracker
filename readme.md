@@ -1,11 +1,11 @@
 # Appointment Tracker
+## CSCI E-15 Dynamic Web Applications
 
-##URL: http://appointmenttracker.rbakshi.me
+###URL: http://appointmenttracker.rbakshi.me
 
-##Demo:  
+###Demo: https://youtu.be/gNpo5pPvIhs
 
 ## Tables
-Tables:
 * Appointments
 * Client
 
@@ -15,20 +15,20 @@ Tables:
 
 ## CRUD 
 ### Admin Login
-*Create:  Create an appointment, Add a new client
+* Create:  Create an appointment, Add a new client
 
-*Read:  Appointments, Clients
+* Read:  Appointments, Clients
 
-*Update:  Update appointment status 
+* Update:  Update appointment status 
 
-*Delete: Delete client (with on delete cascade)
+* Delete: Delete client (with on delete cascade)
 
 ### User login
-*Create:  Create an appointment
+* Create:  Create an appointment
 
-*Read:  Appointments
+* Read:  Appointments
 
-*Delete: Delete appointment
+* Delete: Delete appointment
 
 ## Authentication
 * Login
@@ -62,11 +62,10 @@ Tables:
 * Pick an appointment date 
 * Show available time slots based on the selected appointment date
 
-## Planning Doc: 
-<https:>
+### Planning Doc: 
+<https://docs.google.com/document/d/1B2nKjSmjG9yCm0PkSnD3kuujvQbkb890WR8AffDcF70/edit?usp=sharing>
 
 ## Credits
-* Lecture examples - For reference
 * [Bootstrap-datepicker](https://bootstrap-datepicker.readthedocs.io/en/latest/)
 * [DataTables Table plug-in for jQuery](https://datatables.net/)
 * [Google Fonts](https://fonts.google.com/)
