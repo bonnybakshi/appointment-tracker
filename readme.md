@@ -13,6 +13,10 @@
 * E-mail Address: admin@harvard.edu
 * Password: helloworld
 
+## Client Login Example
+* E-mail Address: jill@harvard.edu
+* Password: helloworld
+
 ## CRUD 
 ### Admin Login
 * Create:  Create an appointment, Add a new client
